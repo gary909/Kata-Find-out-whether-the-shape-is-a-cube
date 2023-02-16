@@ -1,5 +1,9 @@
 var cubeChecker = function(volume, side){
-    return false;
+    if(side * side * side == volume && volume > 0){
+        return true;
+    } else {
+        return false;
+    }
 };
 
 console.log(cubeChecker(56.3, 1))// false
